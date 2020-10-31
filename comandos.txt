@@ -1,0 +1,88 @@
+Lincks descarga
+https://getcomposer.org/ // complemento 
+https://nodejs.org/es/   // complemnto
+https://responsively.app/
+
+//--------------------------------------
+Instalacion de laravel
+composer global require laravel/installer
+//------------------------------------
+crear proyecto
+laravel new primer-proyecto
+//------------------------------------
+encender servidor
+php artisan serve
+http://127.0.0.1:8000/
+
+//------------------------------------------
+crear controlador
+php artisan make:controller LandingController
+
+
+//--------------------------------
+Rutas
+routes -> web.php
+================================
+// controlador
+app  -> http -> controller 
+================================
+================================
+// Vistas
+resources -> views -> 
+================================
+
+
+controller -> view -> LandingController.php-> view -> Landing -> Landing
+
+index.blade.php
+
+
+================================
+DB
+Configuracion de conexion de base de datos
+.env
+--------------------------------
+Crear base de datos
+database->migrations
+/*
+           $table->id();
+            $table->string('names',45);
+            $table->string('lastnames' , 45);
+            $table->string( 'email', 125)->unique();
+            $table->timestamps();
+        });
+*/
+
+comando
+php artisan migrate
+--------------------------------
+registrar rutas de DB
+database->seeders->DatabaseSeeder.php
+mapear modelo
+app->models
+
+------------------------------
+crete_users_table
+
+php artisan make:controller UserController
+
+Comando
+1) php artisan make:model User
+app->Models->User
+Comando
+2) php artisan make:seed UserTableSeeder
+database->seeders->UserTableSeeder.php
+
+
+
+Comando - ejecuta la insersion de UserTabeSeeder.php
+php artisan db:seed
+----------------------------
+seadder
+
+--------------------------
+https://github.com/fzaninotto/Faker
+Libreria para hacer insert masivo
+
+
+
